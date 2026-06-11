@@ -463,30 +463,30 @@
   .gallery-single img:hover {
     filter: grayscale(0%);
   }
+/* ── PROCESS ── */
+#process {
+  padding: 120px 0;
+  background: #0d0d0d;
+}
 
-  /* ── PROCESS ── */
-  #process {
-    padding: 120px 0;
-    background: #0d0d0d;
-  }
+.process-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr; /* image column wider than text */
+  gap: 6rem;
+  align-items: start; /* align to top so image can grow freely */
+}
 
-  .process-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 6rem;
-    align-items: center;
-  }
+.process-text p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+}
 
-  .process-text p {
-    font-size: 1.05rem;
-    line-height: 1.85;
-  }
-
-  .process-image img {
-    width: 100%;
-    aspect-ratio: 4/3;
-    object-fit: contain;
-  }
+.process-image img {
+  width: 100%;
+  height: auto; /* removes aspect-ratio constraint, shows full image */
+  object-fit: contain;
+  display: block;
+}
 
   /* ── TIMELINE ── */
   #timeline {
